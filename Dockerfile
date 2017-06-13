@@ -1,4 +1,4 @@
-FROM golang:1.8
+FROM golang:1.8-alpine
 
 RUN go get github.com/beego/bee
 RUN go get github.com/astaxie/beego
