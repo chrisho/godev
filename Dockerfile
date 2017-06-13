@@ -1,4 +1,5 @@
 FROM golang:1.8-alpine
+MAINTAINER Chris <cenne1986@qq.com>
 
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
