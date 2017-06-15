@@ -10,4 +10,4 @@ RUN go get git.apache.org/thrift.git/lib/go/thrift
 RUN go get github.com/go-sql-driver/mysql
 RUN go get github.com/jinzhu/gorm
 RUN go get github.com/joho/godotenv
-RUN go get github.com/codegangsta/gin
+RUN go get github.com/silenceper/gowatch
