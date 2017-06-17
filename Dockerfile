@@ -1,8 +1,5 @@
 FROM golang:1.8
 MAINTAINER Chris <cenne1986@qq.com>
-
-RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
     
 RUN go get github.com/beego/bee
 RUN go get github.com/astaxie/beego
