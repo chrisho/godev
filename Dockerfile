@@ -17,3 +17,4 @@ RUN go get github.com/aliyun/aliyun-log-go-sdk
 RUN go get github.com/go-redis/redis
 RUN go get github.com/asaskevich/govalidator
 RUN go get github.com/samuel/go-zookeeper/zk
+RUN go get gopkg.in/mgo.v2
