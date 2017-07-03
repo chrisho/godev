@@ -6,3 +6,5 @@ RUN go get github.com/chrisho/mosquito
 RUN go get github.com/samuel/go-zookeeper/zk
 RUN go get github.com/sirupsen/logrus
 RUN go get github.com/go-redis/redis
+RUN go get github.com/jinzhu/gorm
+RUN go get golang.org/x/crypto
