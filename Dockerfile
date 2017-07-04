@@ -9,3 +9,4 @@ RUN go get github.com/go-redis/redis
 RUN go get github.com/jinzhu/gorm
 RUN go get golang.org/x/crypto/bcrypt
 RUN go get github.com/go-sql-driver/mysql
+RUN go get github.com/asaskevich/govalidator
