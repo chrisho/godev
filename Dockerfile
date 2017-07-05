@@ -10,3 +10,9 @@ RUN go get github.com/jinzhu/gorm
 RUN go get golang.org/x/crypto/bcrypt
 RUN go get github.com/go-sql-driver/mysql
 RUN go get github.com/asaskevich/govalidator
+RUN go get github.com/garyburd/redigo/redis
+RUN go get github.com/gin-gonic/gin
+RUN go get github.com/rainbowism/osin
+RUN go get github.com/rainbowism/osin-redis
+RUN go get github.com/tommy351/gin-csrf
+RUN go get github.com/tommy351/gin-sessions
