@@ -16,3 +16,4 @@ RUN go get github.com/rainbowism/osin
 RUN go get github.com/rainbowism/osin-redis
 RUN go get github.com/tommy351/gin-csrf
 RUN go get github.com/tommy351/gin-sessions
+RUN go get github.com/google/uuid
