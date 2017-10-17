@@ -17,5 +17,6 @@ RUN go get github.com/rainbowism/osin-redis
 RUN go get github.com/tommy351/gin-csrf
 RUN go get github.com/tommy351/gin-sessions
 RUN go get github.com/google/uuid
+RUN go get github.com/SebastiaanKlippert/go-wkhtmltopdf
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
