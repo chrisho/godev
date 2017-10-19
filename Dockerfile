@@ -19,7 +19,7 @@ RUN go get github.com/tommy351/gin-sessions
 RUN go get github.com/google/uuid
 RUN go get github.com/SebastiaanKlippert/go-wkhtmltopdf
 
-RUN apt-get update
+RUN apt-get update && apt-get install -y xfonts-75dpi
 RUN cd ~ && wget https://bitbucket.org/wkhtmltopdf/wkhtmltopdf/downloads/wkhtmltox-0.13.0-alpha-7b36694_linux-jessie-amd64.deb \
     && dpkg -i wkhtmltox-0.13.0-alpha-7b36694_linux-jessie-amd64.deb
 
