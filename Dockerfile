@@ -20,7 +20,7 @@ RUN go get github.com/google/uuid
 RUN go get github.com/SebastiaanKlippert/go-wkhtmltopdf
 
 RUN apt-get update
-RUN wget https://bitbucket.org/wkhtmltopdf/wkhtmltopdf/downloads/wkhtmltox-0.13.0-alpha-7b36694_linux-jessie-amd64.deb
-RUN dpkg -i wkhtmltox-0.13.0-alpha-7b36694_linux-jessie-amd64.deb
+RUN cd ~ && wget https://bitbucket.org/wkhtmltopdf/wkhtmltopdf/downloads/wkhtmltox-0.13.0-alpha-7b36694_linux-jessie-amd64.deb \
+    && dpkg -i wkhtmltox-0.13.0-alpha-7b36694_linux-jessie-amd64.deb
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
