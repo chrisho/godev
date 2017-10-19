@@ -19,4 +19,7 @@ RUN go get github.com/tommy351/gin-sessions
 RUN go get github.com/google/uuid
 RUN go get github.com/SebastiaanKlippert/go-wkhtmltopdf
 
+RUN apt-get update
+RUN apt-get install -y wkhtmltopdf
+
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
