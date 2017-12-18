@@ -18,6 +18,10 @@ RUN go get github.com/tommy351/gin-csrf
 RUN go get github.com/tommy351/gin-sessions
 RUN go get github.com/google/uuid
 RUN go get github.com/SebastiaanKlippert/go-wkhtmltopdf
+RUN go get github.com/robfig/cron
+
+RUN cd ~ && git clone --recursive https://github.com/wkhtmltopdf/wkhtmltopdf.git
+RUN apt-get -y install qt5default qt5webkit
 
 #RUN apt-get update && apt-get install -y xfonts-75dpi libjpeg62-turbo fontconfig libx11-6 libxext6 libxrender1 libxcb1 xfonts-base
 #RUN apt-get install -y xvfb
