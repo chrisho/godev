@@ -20,9 +20,8 @@ RUN go get github.com/google/uuid
 RUN go get github.com/SebastiaanKlippert/go-wkhtmltopdf
 RUN go get github.com/robfig/cron
 
-RUN cd ~ && git clone --recursive https://github.com/wkhtmltopdf/wkhtmltopdf.git
-RUN apt-get -y install qt5default qt5webkit
-
+#RUN cd ~ && git clone --recursive https://github.com/wkhtmltopdf/wkhtmltopdf.git
+#RUN apt-get -y install qt5default qt5webkit
 #RUN apt-get update && apt-get install -y xfonts-75dpi libjpeg62-turbo fontconfig libx11-6 libxext6 libxrender1 libxcb1 xfonts-base
 #RUN apt-get install -y xvfb
 #RUN cd ~ && wget https://bitbucket.org/wkhtmltopdf/wkhtmltopdf/downloads/wkhtmltox-0.13.0-alpha-7b36694_linux-jessie-amd64.deb \
