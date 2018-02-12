@@ -19,6 +19,9 @@ RUN go get github.com/tommy351/gin-sessions
 RUN go get github.com/google/uuid
 RUN go get github.com/SebastiaanKlippert/go-wkhtmltopdf
 RUN go get github.com/robfig/cron
+RUN go get github.com/Shopify/sarama
+RUN go get github.com/bsm/sarama-cluster
+
 
 #RUN cd ~ && git clone --recursive https://github.com/wkhtmltopdf/wkhtmltopdf.git
 #RUN apt-get -y install qt5default qt5webkit
