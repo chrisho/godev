@@ -1,4 +1,4 @@
-FROM golang:1.8
+FROM golang:1.10.1
 MAINTAINER Chris <cenne1986@qq.com>
     
 RUN echo "created at 2017-07-01"
