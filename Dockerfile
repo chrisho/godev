@@ -1,10 +1,8 @@
-FROM golang:1.10.1
+FROM golang:1.10.3
 MAINTAINER Chris <cenne1986@qq.com>
 
-RUN go get -v -u github.com/golang/dep/cmd/dep
-RUN dep init -v
-
-RUN dep ensure -add github.com/chrisho/mosquito@=k8s-1.0
+RUN mkdir -p /go/src/github.com/chrisho && \
+    git clone -b k8s https://github.com/chrisho/mosquito.git /go/src/github.com/chrisho
 RUN go get github.com/samuel/go-zookeeper/zk
 RUN go get github.com/sirupsen/logrus
 RUN go get github.com/go-redis/redis
