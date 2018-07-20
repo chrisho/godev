@@ -1,8 +1,10 @@
 FROM golang:1.10.1
 MAINTAINER Chris <cenne1986@qq.com>
-    
-RUN echo "created at 2017-07-01"
-RUN go get github.com/chrisho/mosquito
+
+RUN go get -v -u github.com/golang/dep/cmd/dep
+RUN dep init -v
+
+RUN dep ensure -add github.com/chrisho/mosquito@=k8s-1.0
 RUN go get github.com/samuel/go-zookeeper/zk
 RUN go get github.com/sirupsen/logrus
 RUN go get github.com/go-redis/redis
