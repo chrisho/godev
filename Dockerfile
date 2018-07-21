@@ -9,7 +9,7 @@ MAINTAINER Chris <cenne1986@qq.com>
 #RUN go get github.com/joho/godotenv
 #RUN mkdir -p /go/src/github.com/chrisho/mosquito && \
     #git clone -b k8s https://github.com/chrisho/mosquito.git /go/src/github.com/chrisho/mosquito
-RUN go get github.com/chrisho/mosquito.git# && \
+RUN go get github.com/chrisho/mosquito.git # && \
 #    git checkout -b k8s origin/k8s /go/src/github.com/chrisho/mosquito
     
 # 安装其它插件
