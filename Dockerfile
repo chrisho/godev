@@ -1,8 +1,16 @@
 FROM golang:1.10.3
 MAINTAINER Chris <cenne1986@qq.com>
 
+# 安装微框架
+RUN go get github.com/aliyun/aliyun-log-go-sdk
+RUN go get github.com/rs/xid
+RUN go get golang.org/x/net
+RUN go get google.golang.org/grpc
+RUN go get github.com/joho/godotenv
 RUN mkdir -p /go/src/github.com/chrisho/mosquito && \
     git clone -b k8s https://github.com/chrisho/mosquito.git /go/src/github.com/chrisho/mosquito
+    
+# 安装其它插件
 RUN go get github.com/samuel/go-zookeeper/zk
 RUN go get github.com/sirupsen/logrus
 RUN go get github.com/go-redis/redis
@@ -22,14 +30,5 @@ RUN go get github.com/robfig/cron
 RUN go get github.com/Shopify/sarama
 RUN go get github.com/bsm/sarama-cluster
 RUN go get golang.org/x/text
-
-
-#RUN cd ~ && git clone --recursive https://github.com/wkhtmltopdf/wkhtmltopdf.git
-#RUN apt-get -y install qt5default qt5webkit
-#RUN apt-get update && apt-get install -y xfonts-75dpi libjpeg62-turbo fontconfig libx11-6 libxext6 libxrender1 libxcb1 xfonts-base
-#RUN apt-get install -y xvfb
-#RUN cd ~ && wget https://bitbucket.org/wkhtmltopdf/wkhtmltopdf/downloads/wkhtmltox-0.13.0-alpha-7b36694_linux-jessie-amd64.deb \
-#    && dpkg -i wkhtmltox-0.13.0-alpha-7b36694_linux-jessie-amd64.deb
-
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
