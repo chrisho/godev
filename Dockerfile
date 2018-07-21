@@ -1,8 +1,8 @@
 FROM golang:1.10.3
 MAINTAINER Chris <cenne1986@qq.com>
 
-RUN mkdir -p /usr/local/go/src/github.com/chrisho && \
-    git clone -b k8s https://github.com/chrisho/mosquito.git /usr/local/go/src/github.com/chrisho
+RUN mkdir -p /go/src/github.com/chrisho/mosquito && \
+    git clone -b k8s https://github.com/chrisho/mosquito.git /go/src/github.com/chrisho/mosquito
 RUN go get github.com/samuel/go-zookeeper/zk
 RUN go get github.com/sirupsen/logrus
 RUN go get github.com/go-redis/redis
