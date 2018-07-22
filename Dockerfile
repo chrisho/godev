@@ -3,6 +3,8 @@ MAINTAINER Chris <cenne1986@qq.com>
 
 # 安装微框架
 RUN go get github.com/aliyun/aliyun-log-go-sdk
+RUN go get github.com/asaskevich/govalidator
+RUN go get github.com/sirupsen/logrus
 RUN go get github.com/rs/xid
 RUN go get golang.org/x/net
 RUN go get google.golang.org/grpc
