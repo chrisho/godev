@@ -6,7 +6,7 @@ RUN go get github.com/aliyun/aliyun-log-go-sdk
 RUN go get github.com/asaskevich/govalidator
 RUN go get github.com/sirupsen/logrus
 RUN go get github.com/rs/xid
-RUN go get golang.org/x/net
+RUN go get golang.org/x/net/context
 RUN go get google.golang.org/grpc
 RUN go get github.com/joho/godotenv
 RUN mkdir -p /go/src/github.com/chrisho/mosquito && \
