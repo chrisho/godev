@@ -33,6 +33,6 @@ RUN go get github.com/Shopify/sarama
 RUN go get github.com/bsm/sarama-cluster
 RUN go get golang.org/x/text
 RUN go get github.com/streadway/amqp
-RUN go get github.com/chrisho/sd-grpc-paginate.git
+RUN go get github.com/chrisho/sd-grpc-paginate
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
