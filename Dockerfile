@@ -35,5 +35,6 @@ RUN go get golang.org/x/text
 RUN go get github.com/streadway/amqp
 RUN go get github.com/chrisho/sd-grpc-paginate
 RUN go get github.com/chrisho/sdrabbitmq
+RUN go get github.com/chrisho/sd-helper
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
