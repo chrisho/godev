@@ -23,6 +23,7 @@ RUN go get github.com/Shopify/sarama
 RUN go get github.com/bsm/sarama-cluster
 RUN go get golang.org/x/text
 RUN go get github.com/streadway/amqp
+RUN go get github.com/chrisho/sd-helper
 
 
 #RUN cd ~ && git clone --recursive https://github.com/wkhtmltopdf/wkhtmltopdf.git
