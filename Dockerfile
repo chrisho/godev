@@ -1,4 +1,4 @@
-FROM golang:1.11-alpine3.8
+FROM golang:1.12-alpine3.9
 MAINTAINER Chris <cenne1986@qq.com>
 
 RUN apk update && apk upgrade && \
